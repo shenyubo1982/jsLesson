@@ -1,16 +1,38 @@
 # 🚀 Welcome to your new awesome project!
 
-This project has been created using **webpack-cli**, you can now run
+it's a demo with metamark connect to my webSite
+
+## directory with project
 
 ```
-npm run build
+jsLesson/
+├─ src/
+│  ├─ index.js
+├─ dist/
+│  ├─ index.html
 ```
 
-or
+## Compile the module
 
 ```
-yarn build
+Install the webpack
+npm i --save-dev webpack
+
+Install the Webpack CLI:
+npm i --save-dev webpack-cli
+
+Compile the module:
+npx webpack
+
 ```
 
-to bundle your application
-# jsLesson
+please add config for addawait config,sush as:
+
+```
+webpack.config.cjs
+module.exports = {
+    experiments: {
+        topLevelAwait: true,
+    },
+};
+```
